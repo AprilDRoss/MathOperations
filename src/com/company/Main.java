@@ -7,6 +7,7 @@ public class Main {
         double sum;
         double difference;
         double multiplication;
+        double division;
         double remainder;
         String firstNumber;
         String secondNumber;
@@ -29,16 +30,19 @@ public class Main {
 
         multiplication = operand1 * operand2;
 
-        remainder = operand1 / operand2;
+        division = operand1 / operand2;
 
-        showResults(sum, difference, multiplication, remainder);
+        remainder = operand1 % operand2;
+
+        showResults(sum, difference, multiplication, division, remainder);
 
     }
 
-    public static void showResults( double sum, double difference, double multiplication, double remainder) {
+    public static void showResults( double sum, double difference, double multiplication, double division, double remainder) {
         System.out.println("The sum is: " + sum);
         System.out.println("The difference is: " + difference);
         System.out.println("The product is: " + multiplication);
+        System.out.println("The quotient is: " + division);
         System.out.println("The remainder is: " + remainder);
 
     }
